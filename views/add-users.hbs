@@ -1,0 +1,76 @@
+<div class="body-body">
+
+   <div class="top-body-1">
+
+   
+<div class="title">
+     <p> ADD USERS </p>
+</div>
+
+<!-- <div class="searchplus">
+
+    <input type="text" placeholder="search">
+
+    <svg  class="search-vg"   xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+
+</div> -->
+
+</div>
+
+
+
+<div class="inside-body-1">
+
+<div class="form-div">
+
+   <form action="/add-users" method="post" enctype="multipart/form-data">
+
+    <div class="inner-form-div">
+        <h1 id="online" ></h1>
+    <label for=""> Name </label>
+    <input type="text" name="name">
+</div>
+<div class="inner-form-div">
+    <label for=""> Gender </label>
+    <select name="gender" id="">
+        <Option value="male"> Male </Option>
+        <option value="female"> Female </option>
+    </select>
+</div>
+<div class="inner-form-div">
+    <label for=""> Email </label>
+    <input type="email" name="email" id="">
+</div>
+{{!-- <div class="inner-form-div">
+    <label for=""> Profile Picture </label>
+    <input type="file" name="image" src=".jpg" width="48" height="48">
+</div> --}}
+<div class="inner-form-div">
+    <label for=""> Plan </label>
+    <select name="plan" id="">
+        <option value="regular"> Regular </option>
+        <option value="premium"> Premium </option>
+    </select>
+</div>
+            <button type="submit" class="add-new-button">
+                + Add New User
+            </button>
+   </form>
+
+
+
+</div>
+
+<script>
+    document.getElementById('add-users').onclick = function() {
+       document.getElementById('online').innerHTML = 'Your File has been successfully subitted';
+    }
+</script>
+
+
+
+</div>
+
+
+
+</html>
